@@ -22,12 +22,21 @@ header {
   flex-direction: column;
   color: rgb(81, 81, 82);
 }
+
+#backLogoRound {
+  width: 45px;
+  height: 35px;
+  margin: 20px 0px 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#backLogoRound:hover {
+  background-color: rgb(242, 242, 242);
+}
 #logo {
   font-size: 40px;
   margin: 0px 0px 30px 0px;
-}
-#backLogo {
-  margin: 20px 0px 0px 30px;
 }
 .th {
   text-align: center;
@@ -35,11 +44,11 @@ header {
 }
 .btn {
   color: rgb(81, 81, 82);
-  background-color: white;
+  background-color: inherit;
   font-size: 16px;
   border: none;
 }
-.btn:hover {
+.th2:hover {
   background-color: rgb(245, 243, 243);
 }
 .value {

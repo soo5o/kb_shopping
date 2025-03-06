@@ -41,8 +41,16 @@ table {
   padding-right: 10px;
   padding-top: 10px;
 }
-#backLogo {
+#backLogoRound:hover {
+  background-color: rgb(242, 242, 242);
+}
+#backLogoRound {
+  width: 45px;
+  height: 35px;
   margin: 20px 0px 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inputBox {
   width: 250px;
