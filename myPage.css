@@ -23,7 +23,7 @@ header {
   color: rgb(81, 81, 82);
 }
 
-#backLogoRound {
+#backLogoBlock {
   width: 45px;
   height: 35px;
   margin: 20px 0px 0px 30px;
@@ -31,12 +31,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-#backLogoRound:hover {
+#backLogoBlock:hover {
   background-color: rgb(242, 242, 242);
 }
 #logo {
   font-size: 40px;
-  margin: 0px 0px 30px 0px;
+  margin-bottom: 30px;
 }
 .th {
   text-align: center;
