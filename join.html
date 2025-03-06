@@ -3,32 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link href="login.css" rel="stylesheet" />
+    <title>Join</title>
+    <link href="join.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <h1>3# MALL</h1>
     </header>
-    <form id="goBack">
-      <input
-        type="image"
-        src="back_logo.png"
-        alt="back_logo"
-        id="backLogo"
-        width="23px"
-      />
-    </form>
-    <div id="loginBox">
-      <form id="loginForm">
+    <div id="joinBox">
+      <form id="joinForm">
         <table>
+          <tr>
+            <td class="th">NAME</td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter your name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="th">EMAIL</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
           <tr>
             <td class="th">ID</td>
             <td>
               <input
                 type="text"
                 name="id"
-                class="inputBox"
+                id="id"
                 required
                 placeholder="Enter your id"
               />
@@ -41,34 +56,29 @@
                 type="password"
                 name="password"
                 id="password"
-                class="inputBox"
+                minlength="8"
                 required
                 placeholder="Enter password"
               />
             </td>
           </tr>
         </table>
-        <div id="rememberCheck">
-          <input id="checkbox" class="inputBox" type="checkbox" /><label
-            >Remember me</label
-          >
+        <div id="buttonBox">
+          <input class="jButt" type="submit" value="JOIN" />
+          <input
+            class="jButt"
+            type="button"
+            value="CANCEL"
+            onclick="history.back();"
+          />
         </div>
-        <input type="submit" class="inputBox" value="LOGIN" id="loginButt" />
       </form>
     </div>
   </body>
 </html>
 <script>
   document
-    .getElementById('loginForm')
-    .addEventListener('submit', function (event) {
-      event.preventDefault(); // 기본 제출 방지
-      if (this.checkValidity()) {
-        window.location.href = 'index.html'; // 검증 성공 시 이동
-      }
-    });
-  document
-    .getElementById('goBack')
+    .getElementById('joinForm')
     .addEventListener('submit', function (event) {
       event.preventDefault(); // 기본 제출 방지
       if (this.checkValidity()) {
