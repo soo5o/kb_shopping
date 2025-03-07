@@ -10,17 +10,6 @@
     <header>
       <h1>3# MALL</h1>
     </header>
-    <form id="goBack">
-      <div id="backLogoBlock" for="backLogo">
-        <input
-          type="image"
-          src="back_logo.png"
-          alt="back_logo"
-          id="backLogo"
-          width="23px"
-        />
-      </div>
-    </form>
     <div id="myPageBox">
       <div id="logo">My Page</div>
       <table>
@@ -56,13 +45,3 @@
     </div>
   </body>
 </html>
-<script>
-  document
-    .getElementById('goBack')
-    .addEventListener('submit', function (event) {
-      event.preventDefault(); // 기본 제출 방지
-      if (this.checkValidity()) {
-        window.location.href = 'main.html'; // 검증 성공 시 이동
-      }
-    });
-</script>
