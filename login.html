@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>3# MALL</h1>
+    </header>
+    <div id="loginBox">
+      <form id="loginForm">
+        <table>
+          <tr>
+            <td class="th">ID</td>
+            <td>
+              <input
+                type="text"
+                name="id"
+                class="inputBox"
+                required
+                placeholder="Enter your id"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="th">PASSWORD</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="inputBox"
+                required
+                placeholder="Enter password"
+              />
+            </td>
+          </tr>
+        </table>
+        <div id="rememberCheck">
+          <input id="checkbox" class="inputBox" type="checkbox" /><label
+            style="width: 100px"
+            >Remember me</label
+          >
+          <input
+            id="joinForm"
+            class="inputBox joinButt"
+            type="button"
+            value="JOIN"
+          />
+        </div>
+        <input type="submit" class="inputBox" value="LOGIN" id="loginButt" />
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  document
+    .getElementById('loginForm')
+    .addEventListener('submit', function (event) {
+      event.preventDefault(); // 기본 제출 방지
+      if (this.checkValidity()) {
+        window.location.href = 'main.html'; // 검증 성공 시 이동
+      }
+    });
+  document.getElementById('joinForm').addEventListener('click', function () {
+    window.location.href = 'join.html';
+  });
+</script>
