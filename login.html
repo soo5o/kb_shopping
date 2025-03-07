@@ -52,8 +52,15 @@
         </table>
         <div id="rememberCheck">
           <input id="checkbox" class="inputBox" type="checkbox" /><label
+            style="width: 100px"
             >Remember me</label
           >
+          <input
+            id="joinForm"
+            class="inputBox joinButt"
+            type="button"
+            value="JOIN"
+          />
         </div>
         <input type="submit" class="inputBox" value="LOGIN" id="loginButt" />
       </form>
@@ -66,7 +73,7 @@
     .addEventListener('submit', function (event) {
       event.preventDefault(); // 기본 제출 방지
       if (this.checkValidity()) {
-        window.location.href = 'index.html'; // 검증 성공 시 이동
+        window.location.href = 'main.html'; // 검증 성공 시 이동
       }
     });
   document
@@ -74,7 +81,11 @@
     .addEventListener('submit', function (event) {
       event.preventDefault(); // 기본 제출 방지
       if (this.checkValidity()) {
-        window.location.href = 'index.html'; // 검증 성공 시 이동
+        window.location.href = 'main.html'; // 검증 성공 시 이동
       }
     });
+  document.getElementById('joinForm').addEventListener('click', function () {
+    // 'click' 이벤트로 변경
+    window.location.href = 'join.html';
+  });
 </script>
